@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './views/App.jsx'
-import { Login } from './views/login.jsx'
+import UserLogin  from './views/login.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const router = createBrowserRouter([
   {
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: '/login',
-    element: <Login />
+    path: '/Userlogin',
+    element: <UserLogin />
   },
   // {
   //   path:'/register',
