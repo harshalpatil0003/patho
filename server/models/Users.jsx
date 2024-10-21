@@ -27,8 +27,7 @@ const userSchema=new Schema({
     gender:{
         type:String,
         required:true,
-        enum:['male','female','other'],
-        default:'male'
+        enum:['Male','Female','Others']
     }
 },{
     timestamps:true
