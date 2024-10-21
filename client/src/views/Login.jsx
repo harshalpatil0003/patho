@@ -1,5 +1,6 @@
 
 import Login_img from '../Assets/login/userlogin.jpg'
+import { Link } from 'react-router-dom';
 export default function UserLogin() {
     return (
         <div className='  ' >
@@ -61,7 +62,7 @@ export default function UserLogin() {
                             </form>
                             <p className="mt-4 text-xl text-gray-500 sm:mt-0">
                                 Don't have account?
-                                <a href="#" className="text-gray-700 underline"> Sign up</a>.
+                                <Link to="/userregister">Sign up</Link>
                             </p>
                         </div>
                     </main>

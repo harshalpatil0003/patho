@@ -1,5 +1,8 @@
 
+
 import register_img from '../Assets/register/register_img.jpg'
+import {Link} from 'react-router-dom'
+
 export default function UserRegister() {
     return (
         <div className='  ' >
@@ -80,7 +83,7 @@ export default function UserRegister() {
                                     <label for="Password" class="block text-xl font-medium text-gray-700"> Mobile </label>
 
                                     <input
-                                        type="password"
+                                        type="text"
                                         required
                                         id="Password"
                                         name="password"
@@ -92,13 +95,16 @@ export default function UserRegister() {
                                     <label for="PasswordConfirmation" class="block text-xl font-medium text-gray-700">
                                         Gender
                                     </label>
-                                    <details className="dropdown">
-                                        <summary className="btn m-1">open or close</summary>
-                                        <ul className="text-xl menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                                            <li><a>Item 1</a></li>
-                                            <li><a>Item 2</a></li>
-                                        </ul>
-                                    </details>
+
+
+                                    <select name="cars" id="cars" className='text-xl mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm'>
+                                        <option value="volvo">Male</option>
+                                        <option value="saab">Female</option>
+                                        <option value="audi">Others</option>
+                                    </select>
+
+
+
 
                                     {/* <input
                                         type="password"
@@ -119,7 +125,7 @@ export default function UserRegister() {
                             </form>
                             <p class="mt-4 text-xl text-gray-500 sm:mt-0">
                                 Already have an account?
-                                <a href="#" class="text-gray-700 underline">Log in</a>.
+                                <Link to='/userlogin'>Log in</Link>
                             </p>
 
                         </div>
