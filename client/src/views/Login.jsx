@@ -25,7 +25,7 @@ export default function UserLogin() {
                             <h1 className="mt-2  text-center text-2xl font-bold text-gray-900  ">
                                 Login
                             </h1>
-                            <form action="#" className="mt-8 grid grid-cols-6 gap-6 block mx-auto">
+                            <form action="#" className="mt-8 grid grid-cols-6 gap-6  mx-auto">
 
 
                                 <div className="col-span-6">
@@ -35,7 +35,7 @@ export default function UserLogin() {
                                         type="email"
                                         id="Email"
                                         name="email"
-                                        className="mt-1 w-[100%] text-xl rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm md:w-[400px]"
+                                        className="mt-1 w-[100%] text-xl rounded-md border-gray-200 bg-white  text-gray-700 shadow-sm md:w-[400px]"
                                     />
                                 </div>
 
@@ -46,7 +46,7 @@ export default function UserLogin() {
                                         type="password"
                                         id="Password"
                                         name="password"
-                                        className="mt-1 w-[100%] text-xl rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm  md:w-[400px]"
+                                        className="mt-1 w-[100%] text-xl rounded-md border-gray-200 bg-white  text-gray-700 shadow-sm  md:w-[400px]"
                                     />
                                 </div>
 

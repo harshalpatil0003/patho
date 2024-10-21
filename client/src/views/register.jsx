@@ -50,7 +50,7 @@ export default function UserRegister() {
                                         required
                                         id="Email"
                                         name="email"
-                                        class=" text-xl mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                        class=" text-xl mt-1 w-full rounded-md border-gray-200 bg-white  text-gray-700 shadow-sm"
                                     />
                                 </div>
 
@@ -62,7 +62,7 @@ export default function UserRegister() {
                                         required
                                         id="Password"
                                         name="password"
-                                        class="text-xl mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                        class="text-xl mt-1 w-full rounded-md border-gray-200 bg-white  text-gray-700 shadow-sm"
                                     />
                                 </div>
 
@@ -76,7 +76,7 @@ export default function UserRegister() {
                                         required
                                         id="PasswordConfirmation"
                                         name="password_confirmation"
-                                        class=" text-xl mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                        class=" text-xl mt-1 w-full rounded-md border-gray-200 bg-white  text-gray-700 shadow-sm"
                                     />
                                 </div>
                                 <div class="col-span-6 sm:col-span-3">
@@ -87,7 +87,7 @@ export default function UserRegister() {
                                         required
                                         id="Password"
                                         name="password"
-                                        class="text-xl mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                        class="text-xl mt-1 w-full rounded-md border-gray-200 bg-white  text-gray-700 shadow-sm"
                                     />
                                 </div>
 
@@ -97,7 +97,7 @@ export default function UserRegister() {
                                     </label>
 
 
-                                    <select name="cars" id="cars" className='text-xl mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm'>
+                                    <select name="cars" id="cars" className='text-xl mt-1 w-full rounded-md border-gray-200 bg-white  text-gray-700 shadow-sm'>
                                         <option value="volvo">Male</option>
                                         <option value="saab">Female</option>
                                         <option value="audi">Others</option>
