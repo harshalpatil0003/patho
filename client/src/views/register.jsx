@@ -1,9 +1,25 @@
 
 
 import register_img from '../Assets/register/register_img.jpg'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { useState } from 'react'
 
 export default function UserRegister() {
+    const [user, setUser] = useState(" ")
+    const registerUser = async () => {
+        const { name, email, password, age, gender, mobile } = user
+        const response = await axios.post(`${process.env.REACT_APP_API_URL}/registerUser`, {
+            name: name,
+            email: email,
+            password: password,
+            age: age,
+            gender: gender,
+            mobile: mobile
+
+        })
+        console.log(response.data)
+    }
     return (
         <div className='  ' >
 
@@ -102,17 +118,6 @@ export default function UserRegister() {
                                         <option value="saab">Female</option>
                                         <option value="audi">Others</option>
                                     </select>
-
-
-
-
-                                    {/* <input
-                                        type="password"
-                                        required
-                                        id="PasswordConfirmation"
-                                        name="password_confirmation"
-                                        class=" text-xl mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-                                    /> */}
                                 </div>
 
                                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">

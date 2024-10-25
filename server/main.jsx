@@ -20,6 +20,32 @@ app.listen(port,()=>{
     console.log(`Server is running on port ${port}`)
 })
 
+app.post("/registerUser",async (req,res) =>{
+    const {
+        name,
+        email,
+        password,
+        gender,
+        age,
+        mobile,
+
+    }=req.body
+    const user=new User({
+        name,
+        email,
+        password,
+        gender,
+        age,
+        mobile,
+    })
+    const savedUser=await user.save()
+    res.json({
+        success:true,
+        message:"User created successfully",
+        user:savedUser
+    })
+
+})
 
 
 
