@@ -15,20 +15,9 @@ const userSchema=new Schema({
         type:String,
         required:true,
     },
-    address:{
-        type:String,
-        required:true,
-
-    },
     mobile:{
         required:true,
-        type:num
-    },
-    gender:{
-        type:String,
-        required:true,
-        enum:['Male','Female','Others'],
-        default:'Male'
+        type:Number
     }
 },{
     timestamps:true
