@@ -3,7 +3,7 @@ import register_img from '../Assets/register/register_img.jpg';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function UserRegister() {
@@ -192,8 +192,22 @@ function UserRegister() {
                         </div>
                     </main>
                 </div>
+
             </section>
-            <ToastContainer />
+            
+            <ToastContainer 
+            position="top-center"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            transition:bounce
+            />
         </div>
     );
 }
