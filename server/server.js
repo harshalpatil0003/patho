@@ -3,7 +3,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import mongoose from 'mongoose'
-import {newsignup} from './controller/user.js'
+import {newsignup,loginuser} from './controller/user.js'
 
 
 dotenv.config()
@@ -23,3 +23,4 @@ app.listen(port,()=>{
 })
 
 app.post("/registerUsers",newsignup)
+app.post("/loginUsers",loginuser)
