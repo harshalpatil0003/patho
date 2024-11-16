@@ -20,29 +20,27 @@ export default function UserLogin() {
         }
 
         try {
+            console.log('Sending request with email:', email, 'and password:', password);
             const response = await axios.post(`${import.meta.env.VITE_API_URL}/loginUsers`, {
                 email: email,
                 password: password
             });
-
+            console.log('API Response:', response.data);
             if (response.data.success) {
+                toast.success(response.data.message);
                 localStorage.setItem('token', response.data.token);
-                localStorage.setItem('user', JSON.stringify(response.data.user));
-                toast.success('Login Successful');
+                localStorage.setItem('user', JSON.stringify(response.data.data));
                 toast.loading('Redirecting to Dashboard...');
                 setTimeout(() => {
                     window.location.href = '/';
                 }, 3000);
             } else {
-                const errorMessage = response.data.message || "Invalid Email or Password"; // Use message from API if available
-                toast.error(errorMessage);
+                toast.error(response.data.message); // Use message from API if available
             }
         } catch (error) {
-            toast.error("An error occurred. Please try again later.");
-            console.error("Login error:", error); // Log error for debugging
-            if (error.response) {
-                console.log("Error response:", error.response.data); // Log the error response for further investigation
-            }
+            // Handle errors that occur during the API call
+            toast.error('Invalid Credentials!');
+            console.error("Login error:", error); // Log the error for debugging
         }
     };
 
@@ -108,7 +106,7 @@ export default function UserLogin() {
                 position="top-center"
                 autoClose={2000}
                 theme="dark"
-            
+
             />
         </div>
     );
