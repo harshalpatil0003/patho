@@ -1,32 +1,29 @@
 
-"use client";
-
 import { Button, Navbar } from "flowbite-react";
 import Logo from '../../Assets/navbar/logo.png'
+import logout from '../Navbar/logout.png'
 
 export function Nav() {
   return (
-    <Navbar fluid rounded className="h-[80px] bg-cyannns-400">
-      <Navbar.Brand href="/">
-        <img src={Logo} className="mr-3 h-6 sm:h-9" alt="GoLab Logo" />
+    <Navbar   className="  pt-10 h-[80px] bg-black">
+      <Navbar.Brand href="/" className="mt-[10px]">
+        <img src={Logo} className="mr-3 h-8 md: h-11 " alt="GoLab Logo" />
         {/* <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"></span> */}
       </Navbar.Brand>
       <Navbar.Toggle />
 
-      <div className="hidden md:order-2">
-        <Button>Logout</Button>
-
-      </div>
-      <Navbar.Collapse className="">
-        <Navbar.Link href="/" active className="text-xl">
-          Home
-        </Navbar.Link>
-        <Navbar.Link href="#" className="text-xl sm:text-2xl">About</Navbar.Link>
-        <Navbar.Link href="#" className="text-xl">Services</Navbar.Link>
-        <Navbar.Link href="#" className="text-xl">Pricing</Navbar.Link>
-        <Navbar.Link href="#" className="text-xl">Contact</Navbar.Link>
-        <Navbar.Link href="#" className="text-xl px-2 active:text-white">Logout</Navbar.Link>
-        <Navbar.Link href="/Userlogin" className="text-xl">Login</Navbar.Link>
+     
+      <Navbar.Collapse className="mt-[10px]">
+        <Navbar.Link href="/"  className="text-xl text-white">Home</Navbar.Link>
+        <Navbar.Link href="#" className="text-xl text-white ">About</Navbar.Link>
+        <Navbar.Link href="#" className="text-xl text-white">Services</Navbar.Link>
+        <Navbar.Link href="#" className="text-xl text-white">Pricing</Navbar.Link>
+        <Navbar.Link href="#" className="text-xl text-white">Contact</Navbar.Link>
+        <Navbar.Link href="/Userlogin" className="text-xl text-white ">Login</Navbar.Link>
+      
+        
+        <Navbar.Link href="#" className="text-xl  text-red-700">Logout</Navbar.Link>
+        <img src={logout} alt="logout img" className="border-1 hover:bg-s mt-[10px] h-8 md:inline-flex  mb-[10px]"/> 
 
       </Navbar.Collapse>
     </Navbar>
