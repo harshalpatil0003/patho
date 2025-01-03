@@ -16,7 +16,7 @@ export function Nav() {
           arrowIcon={false}
           inline
           label={
-            <Button color="blue">Login</Button>
+            <Button  gradientMonochrome="success">Login</Button>
           }
         >
           <Dropdown.Header>
