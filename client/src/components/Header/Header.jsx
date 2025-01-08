@@ -24,7 +24,7 @@ export function Header() {
         <h1 className=" m-3 text-4xl  font-bold lg:text-8xl ">Book Your Lab <br /> Tests Easily.</h1>
         <p className="block m-8 lg:text-2xl">Accurate results, trusted labs, hassle-free bookings.</p>
         <Button.Group variant="outline">
-          <Button gradientMonochrome="teal" size="xl" className="font-bold rounded-lg">Book Now</Button>
+          <Button gradientMonochrome="teal" size="xl" className="font-bold rounded-lg" href="/userlogin">Book Now</Button>
           
         </Button.Group>
       </div>

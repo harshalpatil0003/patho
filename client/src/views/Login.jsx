@@ -32,7 +32,7 @@ export default function UserLogin() {
                 localStorage.setItem('user', JSON.stringify(response.data.data));
                 toast.loading('Redirecting to Dashboard...');
                 setTimeout(() => {
-                    window.location.href = '/';
+                    window.location.href = '/UserPanel';
                 }, 3000);
             } else {
                 toast.error(response.data.message); // Use message from API if available
