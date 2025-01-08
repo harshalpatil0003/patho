@@ -6,6 +6,7 @@ import App from './views/App.jsx'
 import UserLogin  from './views/login.jsx'
 import UserRegister from './views/register.jsx'
 import UserPanel from './views/User_Panel.jsx'
+import Not_Found from './views/404.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <h1>Page Not Found</h1>
+    element: <Not_Found/>
   }
 ])
 
