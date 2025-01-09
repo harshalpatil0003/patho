@@ -7,9 +7,7 @@ import logo from '../../Assets/navbar/logo.png'
 export function Panel() {
     return (
       
-        <Sidebar aria-label="Sidebar with logo branding example">
-            <Sidebar.Logo href="/UserPanel" img={logo} imgAlt="Flowbite logo">
-            </Sidebar.Logo>
+        <Sidebar aria-label="Sidebar with logo branding example" className="">
             <Sidebar.Items>
                 <Sidebar.ItemGroup >
                     <Sidebar.Item href="#" icon={HiChartPie} className="text-2xl">
