@@ -2,6 +2,8 @@ import { Panel } from '../components/Side Panel/panel.jsx'
 import { Profile } from '../components/Profile/Profile.jsx'
 import { Card, Button } from 'flowbite-react'
 import blood from '../Assets/User Panel/blood.AVIF'
+import checkup from '../Assets/User Panel/checkup.jpg'
+import Specialized_Tests from '../Assets/User Panel/Specialized_Tests.webp'
 export default function User_Panel() {
     return (
         <div>
@@ -18,29 +20,28 @@ export default function User_Panel() {
                         Blood Tests
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                    Blood tests provide key insights into your health, detecting conditions like anemia, infections, and more. Ideal for routine check-ups or specific concerns, ensuring accurate and reliable results.
                     </p>
                     <Button>More</Button>
                 </Card>
                 <Card
                     className="max-w-sm m-6">
-                    <img src={blood} alt="image 1" />
+                    <img src={checkup} alt="image 1" />
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Blood Tests
+                        Health Check Up
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                    </p>
+                    Health packages offer comprehensive check-ups, combining multiple tests to assess overall wellness and detect potential health issues early.                </p>
                     <Button>More</Button>
                 </Card>
                 <Card
                     className="max-w-sm m-6">
-                    <img src={blood} alt="image 1" />
+                    <img src={Specialized_Tests} alt="image 1" />
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Blood Tests
+                    Specialized Tests
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                    Specialized tests provide advanced diagnostics for specific conditions, offering precise and detailed health insights.
                     </p>
                     <Button>More</Button>
                 </Card>
