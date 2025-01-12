@@ -23,7 +23,7 @@ export function Panel() {
   return (
     <>
       <div className="flex min-h-[50vh] items-center justify-center">
-        <Button onClick={() => setIsOpen(true)}>Menu</Button>
+        <Button onClick={() => setIsOpen(true)} className="absolute top-[]">Menu</Button>
       </div>
       <Drawer open={isOpen} onClose={handleClose}>
         <Drawer.Header title="MENU" titleIcon={() => <></>} />
