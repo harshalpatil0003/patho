@@ -22,9 +22,9 @@ export function Panel() {
 
   return (
     <>
-      <div className="flex min-h-[50vh] items-center justify-center">
-        <Button onClick={() => setIsOpen(true)} className="absolute top-[]">Menu</Button>
-      </div>
+      {/* <div className="flex items-center justify-center">
+        <Button gradientMonochrome="cyan" onClick={() => setIsOpen(true)} className="absolute left-[2px] top-[100px]"> <p className="">Menu</p></Button>
+      </div> */}
       <Drawer open={isOpen} onClose={handleClose}>
         <Drawer.Header title="MENU" titleIcon={() => <></>} />
         <Drawer.Items>

@@ -4,7 +4,7 @@ import { Card, Button } from 'flowbite-react'
 import blood from '../Assets/User Panel/blood.AVIF'
 import checkup from '../Assets/User Panel/checkup.jpg'
 import Specialized_Tests from '../Assets/User Panel/Specialized_Tests.webp'
-export default function User_Panel() {
+export default function User_Panel({name}) {
     return (
         <div>
             <Profile name={name} />
@@ -12,7 +12,7 @@ export default function User_Panel() {
 
             <Panel />
 
-            <div className='flex flex-wrap  justify-evenly mt-20 '>
+            <div className='flex flex-wrap  justify-evenly'>
                 <Card
                     className="max-w-sm m-6">
                     <img src={blood} alt="image 1" />
@@ -22,7 +22,10 @@ export default function User_Panel() {
                     <p className="font-normal text-gray-700 dark:text-gray-400">
                     Blood tests provide key insights into your health, detecting conditions like anemia, infections, and more. Ideal for routine check-ups or specific concerns, ensuring accurate and reliable results.
                     </p>
-                    <Button>More</Button>
+                    <div>
+                    <Button className='sticky z-10'>More</Button>
+
+                    </div>
                 </Card>
                 <Card
                     className="max-w-sm m-6">
