@@ -10,7 +10,7 @@ export default function User_Panel({name}) {
             <Profile name={name} />
 
 
-            <Panel />
+            <Panel/>
 
             <div className='flex flex-wrap  justify-evenly'>
                 <Card
@@ -22,10 +22,8 @@ export default function User_Panel({name}) {
                     <p className="font-normal text-gray-700 dark:text-gray-400">
                     Blood tests provide key insights into your health, detecting conditions like anemia, infections, and more. Ideal for routine check-ups or specific concerns, ensuring accurate and reliable results.
                     </p>
-                    <div>
-                    <Button className='sticky z-10'>More</Button>
-
-                    </div>
+                  
+                    <Button className=''>More</Button>
                 </Card>
                 <Card
                     className="max-w-sm m-6">

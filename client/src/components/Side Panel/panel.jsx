@@ -25,7 +25,7 @@ export function Panel() {
       {/* <div className="flex items-center justify-center">
         <Button gradientMonochrome="cyan" onClick={() => setIsOpen(true)} className="absolute left-[2px] top-[100px]"> <p className="">Menu</p></Button>
       </div> */}
-      <Drawer open={isOpen} onClose={handleClose}>
+      <Drawer open={isOpen} onClose={handleClose} className="mt-20">
         <Drawer.Header title="MENU" titleIcon={() => <></>} />
         <Drawer.Items>
           <Sidebar
