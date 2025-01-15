@@ -3,6 +3,7 @@ import { Card } from 'flowbite-react'
 import { Straps } from '../components/Accordion/Accordion.jsx'
 import blood_analyzer from '../Assets/About/blood_analyzer.webp'
 import ultrasound from '../Assets/About/ultrasound_machine.webp'
+
 function About() {
     return (
 
@@ -27,25 +28,61 @@ function About() {
                 <p className='my-3 font-semibold'>Advanced Equipment and Technology</p>
                 <p>We partner with labs that use state-of-the-art equipment to ensure accurate and reliable results.</p>
                 <div className=''>
-                    {/* <Card
-                        className="max-w-sm max-h-10 mt-5"
-                        imgSrc={blood_analyzer}
-                        imgAlt="Blood Analyzer"
-                        
-                    >
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            High-Precision Blood Analyzers
-                        </h5>
-                    </Card>
-                    <Card
-                        className="max-w-sm mt-4"
-                        imgSrc={ultrasound}
-                        imgAlt="Ultrasound Machine"
-                    >
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Cutting-Edge Imaging Systems
-                        </h5>
-                    </Card>
+
+                    <div class="relative flex overflow-x-hidden">
+                        <div class=" flex py-12 animate-marquee whitespace-nowrap">
+                            <span class="text-4xl mx-4"> <Card
+                                className="w-1/2 mt-5"
+                                imgSrc={blood_analyzer}
+                                imgAlt="Blood Analyzer"
+
+                            >
+                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    High-Precision Blood Analyzers
+                                </h5>
+                            </Card></span>
+                                <Card
+                                className="w-1/2"
+                                imgSrc={ultrasound}
+                                imgAlt="Ultrasound Machine"
+                            >
+                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Cutting-Edge Imaging Systems
+                                </h5>
+                            </Card>
+                            <span class="text-4xl mx-4">Marquee Item 3</span>
+                            <span class="text-4xl mx-4">Marquee Item 4</span>
+                            <span class="text-4xl mx-4">Marquee Item 5</span>
+                        </div>
+
+                        <div class=" flex absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+                            <span class="text-4xl mx-4"> <Card
+                                className="max-w-sm mt-5"
+                                imgSrc={blood_analyzer}
+                                imgAlt="Blood Analyzer"
+
+                            >
+                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    High-Precision Blood Analyzers
+                                </h5>
+                            </Card></span>
+                            <span class="text-4xl mx-4"> <Card
+                                className="max-w-sm mt-4"
+                                imgSrc={ultrasound}
+                                imgAlt="Ultrasound Machine"
+                            >
+                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Cutting-Edge Imaging Systems
+                                </h5>
+                            </Card></span>
+                            <span class="text-4xl mx-4">Marquee Item 3</span>
+                            <span class="text-4xl mx-4">Marquee Item 4</span>
+                            <span class="text-4xl mx-4">Marquee Item 5</span>
+                        </div>
+                    </div>
+
+                    {/*
+                   
                     <Card
                         className="max-w-sm mt-4"
                         imgAlt="Meaningful alt text for an image that is not purely decorative"
@@ -82,43 +119,7 @@ function About() {
                             Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
                         </p>
                     </Card> */}
-                    <div className="carousel carousel-center bg-neutral rounded-box max-w-md space-x-4 p-4">
-                        <div className="carousel-item">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-                                className="rounded-box" />
-                        </div>
-                        <div className="carousel-item">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-                                className="rounded-box" />
-                        </div>
-                        <div className="carousel-item">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-                                className="rounded-box" />
-                        </div>
-                        <div className="carousel-item">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
-                                className="rounded-box" />
-                        </div>
-                        <div className="carousel-item">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
-                                className="rounded-box" />
-                        </div>
-                        <div className="carousel-item">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
-                                className="rounded-box" />
-                        </div>
-                        <div className="carousel-item">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
-                                className="rounded-box" />
-                        </div>
-                    </div>
+
 
                 </div>
             </div>
