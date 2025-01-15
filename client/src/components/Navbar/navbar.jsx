@@ -6,6 +6,14 @@ import logo from '../../Assets/navbar/logo.png'
 import logout from '../Navbar/logout.png'
 
 export function Nav() {
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+  };
   return (
     <Navbar fluid rounded className="bg-cyan-800 ">
       <Navbar.Brand href="/">
@@ -16,7 +24,7 @@ export function Nav() {
           arrowIcon={false}
           inline
           label={
-            <Button  gradientMonochrome="success">Login</Button>
+            <Button gradientMonochrome="success">Login</Button>
           }
         >
           <Dropdown.Header>
@@ -33,7 +41,12 @@ export function Nav() {
 
       <Navbar.Collapse className="">
         <Navbar.Link href="#" className="lg:text-xl text-white"> Home </Navbar.Link>
-        <Navbar.Link href="#" className="lg:text-xl text-white">About</Navbar.Link>
+
+
+        <Navbar.Link className="cursor-pointer lg:text-xl text-white" onClick={() => scrollToSection('About')}>About</Navbar.Link>
+
+
+
         <Navbar.Link href="#" className="lg:text-xl  text-white">Services</Navbar.Link>
         <Navbar.Link href="#" className="lg:text-xl text-white">Pricing</Navbar.Link>
         <Navbar.Link href="#" className="lg:text-xl text-white">Contact</Navbar.Link>
