@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: [
     flowbite.plugin(),
+    require('daisyui'),
     require('@tailwindcss/forms')
 
   ],
