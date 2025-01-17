@@ -3,7 +3,9 @@ import { Card } from 'flowbite-react'
 import { Straps } from '../components/Accordion/Accordion.jsx'
 import blood_analyzer from '../Assets/About/blood_analyzer.webp'
 import ultrasound from '../Assets/About/ultrasound_machine.webp'
-
+import x_ray from '../Assets/About/x-ray.avif'
+import pressurized_fluid_extraction from '../Assets/About/pressurized-fluid-extraction.jpg'
+import centrifuge from '../Assets/About/centrifuge.jpg'
 function About() {
     return (
 
@@ -31,95 +33,28 @@ function About() {
 
                     <div class="relative flex overflow-x-hidden">
                         <div class=" flex py-12 animate-marquee whitespace-nowrap">
-                            <span class="text-4xl mx-4"> <Card
-                                className="w-1/2 mt-5"
-                                imgSrc={blood_analyzer}
-                                imgAlt="Blood Analyzer"
+                        <img src={blood_analyzer} style={{height:300, width:400}}/>
 
-                            >
-                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    High-Precision Blood Analyzers
-                                </h5>
-                            </Card></span>
-                                <Card
-                                className="w-1/2"
-                                imgSrc={ultrasound}
-                                imgAlt="Ultrasound Machine"
-                            >
-                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    Cutting-Edge Imaging Systems
-                                </h5>
-                            </Card>
-                            <span class="text-4xl mx-4">Marquee Item 3</span>
-                            <span class="text-4xl mx-4">Marquee Item 4</span>
-                            <span class="text-4xl mx-4">Marquee Item 5</span>
+                        <img src={ultrasound} style={{height:300, width:400}}/>
+
+                        <img src={ x_ray } style={{height:300, width:400}}/>
+                        <img src={centrifuge} style={{height:300, width:400}}/>
+                        <img src={pressurized_fluid_extraction} style={{height:300, width:400}}/>
+
+
                         </div>
 
                         <div class=" flex absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-                            <span class="text-4xl mx-4"> <Card
-                                className="max-w-sm mt-5"
-                                imgSrc={blood_analyzer}
-                                imgAlt="Blood Analyzer"
+                        <img src={blood_analyzer}  style={{height:300, width:400}}/>
+                        <img src={ultrasound} style={{height:300, width:400}}/>
+                           
+                        <img src={x_ray} style={{height:300, width:400}}/>
+                        
+                            <img src={centrifuge} style={{height:300, width:400}}/>
+                            <img src={pressurized_fluid_extraction} style={{height:300, width:400}}/>
 
-                            >
-                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    High-Precision Blood Analyzers
-                                </h5>
-                            </Card></span>
-                            <span class="text-4xl mx-4"> <Card
-                                className="max-w-sm mt-4"
-                                imgSrc={ultrasound}
-                                imgAlt="Ultrasound Machine"
-                            >
-                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    Cutting-Edge Imaging Systems
-                                </h5>
-                            </Card></span>
-                            <span class="text-4xl mx-4">Marquee Item 3</span>
-                            <span class="text-4xl mx-4">Marquee Item 4</span>
-                            <span class="text-4xl mx-4">Marquee Item 5</span>
                         </div>
                     </div>
-
-                    {/*
-                   
-                    <Card
-                        className="max-w-sm mt-4"
-                        imgAlt="Meaningful alt text for an image that is not purely decorative"
-                        imgSrc="/images/blog/image-1.jpg"
-                    >
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Sterile Sample Collection Tools
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                        </p>
-                    </Card>
-                    <Card
-                        className="max-w-sm mt-4"
-                        imgAlt="Meaningful alt text for an image that is not purely decorative"
-                        imgSrc="/images/blog/image-1.jpg"
-                    >
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Noteworthy technology acquisitions 2021
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                        </p>
-                    </Card>
-                    <Card
-                        className="max-w-sm mt-4"
-                        imgAlt="Meaningful alt text for an image that is not purely decorative"
-                        imgSrc="/images/blog/image-1.jpg"
-                    >
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Noteworthy technology acquisitions 2021
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                        </p>
-                    </Card> */}
-
 
                 </div>
             </div>
