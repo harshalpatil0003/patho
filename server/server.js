@@ -4,6 +4,12 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import mongoose from 'mongoose'
 import {newsignup,loginuser} from './controller/user.js'
+import {
+    createContact,
+    getAllContacts,
+    getContactById,
+    deleteContact,
+  } from
 
 
 dotenv.config()
@@ -24,3 +30,8 @@ app.listen(port,()=>{
 
 app.post("/registerUsers",newsignup)
 app.post("/loginUsers",loginuser)
+
+app.post("/contact", upload.single("attachment"), createContact);
+app.get("/contacts", getAllContacts);
+app.get("/contact/:id", getContactById);
+app.delete("/contact/:id", deleteContact);
