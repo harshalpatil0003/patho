@@ -8,12 +8,12 @@ import Contact from '../views/Contact.jsx'
 function App() {
     return (
         <div>
-        <Nav/>
-        <Header/>
-        <About/>
-        <Contact/>
+            <Nav />
+            <Header />
+            <About />
+            <Contact />
 
-        <Foot/>
+            <Foot />
         </div>
     )
 }
