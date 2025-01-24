@@ -57,6 +57,10 @@ function UserRegister() {
 
             if (response.data.success) {
                 toast.success(response.data.message);
+                toast.loading('Redirecting to Dashboard...');
+                setTimeout(() => {
+                    window.location.href = '/UserPanel';
+                }, 3000);
             } else {
                 toast.error(response.data.message || 'Failed To Register.');
             }
@@ -72,7 +76,7 @@ function UserRegister() {
             });
         } catch (error) {
             console.error('Registration error:', error); // Log error for debugging
-            toast.error('User  already exists with this email');
+            toast.error('User  already exists with this email or mobile no');
         }
     };
 
