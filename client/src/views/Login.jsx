@@ -15,7 +15,7 @@ export default function UserLogin() {
         e.preventDefault(); // Prevent the default form submission
         const { email, password } = user;
         if (!email || !password) {
-            toast.error('All fields are required');
+            toast.error('Enter Credentials');
             return; // Exit early if fields are empty
         }
 
