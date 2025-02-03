@@ -25,7 +25,7 @@ export function Header() {
         <p className="block m-8 lg:text-2xl">Accurate results, trusted labs, hassle-free bookings.</p>
         <Button.Group variant="outline">
           <Button gradientMonochrome="teal" size="xl" className="font-bold rounded-lg" href="/userlogin">Book Now</Button>
-          
+
         </Button.Group>
       </div>
 

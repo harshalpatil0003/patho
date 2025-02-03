@@ -48,7 +48,7 @@ export function Nav() {
 
 
 
-        <Navbar.Link href="#" className="lg:text-xl  text-white">Services</Navbar.Link>
+        <Navbar.Link href="#" className="lg:text-xl  text-white"  onClick={() => scrollToSection('Services')}>Services</Navbar.Link>
         <Navbar.Link href="#" className="lg:text-xl text-white">Pricing</Navbar.Link>
         <Navbar.Link href="#" className="cursor-pointer lg:text-xl text-white" onClick={() => scrollToSection('Contact')}>Contact</Navbar.Link>
       </Navbar.Collapse>

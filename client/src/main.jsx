@@ -8,6 +8,7 @@ import UserRegister from './views/register.jsx'
 import UserPanel from './views/User_Panel.jsx'
 import About from './views/About.jsx'
 import Contact from './views/Contact.jsx'
+import Services from './views/Services.jsx'
 import Not_Found from './views/404.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -30,12 +31,16 @@ const router = createBrowserRouter([
   },
   {
     path: '/About',
-    element:<About/>
+    element: <About />
   },
   {
     path: '/Contact',
-    element: <Contact/>
-    },
+    element: <Contact />
+  },
+  {
+    path: '/Services',
+    element: <Services />
+  },
   {
     path: '*',
     element: <Not_Found />

@@ -7,7 +7,7 @@ import Specialized_Tests from '../Assets/User Panel/Specialized_Tests.webp'
 export default function User_Panel({name}) {
     return (
         <div>
-            <Profile name={name} />
+            <Profile name={ name} />
 
 
             <Panel/>

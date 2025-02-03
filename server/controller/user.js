@@ -1,13 +1,28 @@
 import User from "../model/User.js";
 import bcrypt from 'bcrypt'; // Import bcrypt
+import multer from 'multer'; 
 
+const upload = multer({
+    storage,
+    fileFilter: (req, file, cb) => {
+      const allowedTypes = ['image/jpeg', 'image/png', 'image/jpg'];
+      if (allowedTypes.includes(file.mimetype)) {
+        cb(null, true);
+      } else {
+        cb(new Error('Invalid file type. Only JPEG and PNG are allowed.'));
+      }
+    },
+    limits: { fileSize: 2 * 1024 * 1024 }, // 2 MB limit
+  });
+
+  
 const newsignup = async (req, res) => {
-    const { name, email, password, mobile, gender } = req.body;
+    const { name, email, password, mobile, gender, picture } = req.body;
 
     // Hash the password before saving
     const hashedPassword = await bcrypt.hash(password, 10); // 10 is the salt rounds
 
-    const user = new User({ name, email, password: hashedPassword, mobile, gender });
+    const user = new User({ name, email, password: hashedPassword, mobile, gender, picture });
 
     try {
         const savedUser  = await user.save();
@@ -67,4 +82,4 @@ const loginuser = async (req, res) => {
     }
 };
 
-export { newsignup, loginuser };
+export { newsignup, loginuser,upload };
