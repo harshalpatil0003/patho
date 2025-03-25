@@ -39,7 +39,7 @@ export function Header() {
         </div>
 
         {/* Card 3: Flights */}
-        <div className="shadow-xl  hover:scale-[1.05] transition duration-700 ease-in-out  rounded-lg p-5 overflow-hidden md:text-2xl" style={{ backgroundImage: `url(${sec7})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div data-aos="fade-down-right" className="shadow-xl  hover:scale-[1.05] transition duration-700 ease-in-out  rounded-lg p-5 overflow-hidden md:text-2xl" style={{ backgroundImage: `url(${sec7})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
           <h3 className="font-bold">Popular Tests</h3>
           <p className="block font-bold">Explore the world</p>
         </div>
