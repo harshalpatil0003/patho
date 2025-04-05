@@ -43,7 +43,6 @@ const storage = multer.diskStorage({
   // Initialize Multer middleware
   const upload = multer({ storage });
 
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.post("/registerUsers",newsignup)
 app.post("/loginUsers",loginuser)

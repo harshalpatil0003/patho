@@ -1,19 +1,6 @@
 import User from "../model/User.js";
 import bcrypt from 'bcrypt'; // Import bcrypt
-import multer from 'multer'; 
 
-const upload = multer({
-    storage,
-    fileFilter: (req, file, cb) => {
-      const allowedTypes = ['image/jpeg', 'image/png', 'image/jpg'];
-      if (allowedTypes.includes(file.mimetype)) {
-        cb(null, true);
-      } else {
-        cb(new Error('Invalid file type. Only JPEG and PNG are allowed.'));
-      }
-    },
-    limits: { fileSize: 2 * 1024 * 1024 }, // 2 MB limit
-  });
 
   
 const newsignup = async (req, res) => {
@@ -82,4 +69,4 @@ const loginuser = async (req, res) => {
     }
 };
 
-export { newsignup, loginuser,upload };
+export { newsignup, loginuser };
