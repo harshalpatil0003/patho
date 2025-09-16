@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'flowbite-react'
 import { Straps } from '../components/Accordion/Accordion.jsx'
-import blood_analyzer from '../Assets/About/blood_analyzer.webp'
+import blood_analyzer from '../Assets/About/Blood_analyzer.webp'
 import ultrasound from '../Assets/About/ultrasound_machine.webp'
 import x_ray from '../Assets/About/x-ray.avif'
 import pressurized_fluid_extraction from '../Assets/About/pressurized-fluid-extraction.jpg'
