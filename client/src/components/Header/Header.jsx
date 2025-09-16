@@ -21,10 +21,10 @@ export function Header() {
     <div className=" flex flex-wrap justify-around items-center py-4">
 
       <div className="  text-center">
-        <h1 className=" m-3 text-4xl bg-gradient-to-tl from-cyan-800 via-teal-700 to-teal-400 bg-clip-text text-transparent font-bold lg:text-8xl ">Book Your Lab <br /> Tests Easily.</h1>
+        <h1 className=" m-3 text-3xl bg-gradient-to-tl from-cyan-800 via-teal-700 to-teal-400 bg-clip-text text-transparent font-bold lg:text-8xl ">Book Your Lab <br /> Tests Easily.</h1>
         <p className="block m-8 lg:text-2xl">Accurate results, trusted labs, hassle-free bookings.</p>
         <Button.Group variant="outline">
-          <Button gradientMonochrome="teal" size="xl" className="font-bold rounded-lg" href="/userlogin">Book Now</Button>
+          <Button gradientMonochrome="teal" size="lg" className="font-bold rounded-lg" href="/userlogin">Book Now</Button>
 
         </Button.Group>
       </div>
@@ -32,9 +32,9 @@ export function Header() {
       <div className="  grid grid-cols-2 gap-5 p-[20px]  lg:mt-12 ">
         {/* Card 1: Highlight Section */}
         <div className=" relative shadow-xl hover:scale-[1.05] transition duration-700 ease-in-out col-span-2 rounded-lg p-5 overflow-hidden " style={{ backgroundImage: `url(${sec6})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }} >
-          <h2 className="font-bold text-3xl"> Blood Test, COVID-19 Test</h2>
+          <h2 className="font-bold text-2xl"> Blood Test, COVID-19 Test</h2>
           <div className="mx-auto">
-            <Button color="dark" className="mt-8 rounded-full font-bold  ">Explore Tests</Button>
+            <Button color="dark" size='lg' className="mt-8 rounded-lg font-bold  ">Explore Tests</Button>
           </div>
         </div>
 
