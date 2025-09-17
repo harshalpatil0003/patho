@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Button, Navbar, Avatar, Dropdown } from "flowbite-react";
 import sec1 from '../Header/sec1.jpg'
+import { Link } from "react-router-dom";
 import sec2 from '../Header/sec2.jpg'
 import sec3 from '../Header/sec3.avif'
 import sec4 from '../Header/sec4.jpg'
@@ -14,7 +15,7 @@ const myStyle = {
     "url(${sec1})",
 
   backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
+  backgroundRepeat: "no- repeat",
 };
 export function Header() {
   return (
@@ -32,9 +33,9 @@ export function Header() {
       <div className="  grid grid-cols-2 gap-5 p-[20px]  lg:mt-12 ">
         {/* Card 1: Highlight Section */}
         <div className=" relative shadow-xl hover:scale-[1.05] transition duration-700 ease-in-out col-span-2 rounded-lg p-5 overflow-hidden " style={{ backgroundImage: `url(${sec6})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }} >
-          <h2 className="font-bold text-2xl"> Blood Test, COVID-19 Test</h2>
+          <h2 className="font-bold text-l lg: text-3xl"> Blood Test, COVID-19 Test</h2>
           <div className="mx-auto">
-            <Button color="dark" size='lg' className="mt-8 rounded-lg font-bold  ">Explore Tests</Button>
+            <Button color="dark" size='lg ' className="mt-8 rounded-lg font-bold p-2 ">Explore Tests</Button>
           </div>
         </div>
 

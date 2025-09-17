@@ -1,4 +1,5 @@
 import { Button } from "flowbite-react"
+import img from '../Assets/Vaccine development.gif'
 export default function Example() {
     return (
       <>
@@ -16,8 +17,10 @@ export default function Example() {
             <h1 className="mt-4 text-balance text-5xl font-semibold tracking-tight  text-cyan-600 sm:text-7xl">
               Page not found
             </h1>
+
+            <img src={img} className="h-[250px] mx-auto"/>
             <p className="mt-6 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-              Sorry, we couldn’t find the page you’re looking for.
+              Sorry, couldn’t find the page you’re looking for.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button gradientMonochrome="info" href="/" className="p-2">
