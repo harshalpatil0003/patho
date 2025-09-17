@@ -72,7 +72,7 @@ import { useEffect, useState } from 'react';
 
 export function Profile() {
   const [profilePic, setProfilePic] = useState();
-  const [user, setUser] = useState({ name: '', email: '', picture: '' });
+  const [user, setUser] = useState({ name: '', email: '',  });
   
   const handleProfilePicUpload = async (event) => {
     const file = event.target.files[0];
@@ -112,25 +112,12 @@ export function Profile() {
             <img src={logo} className="mr-2 h-10 md:h-[65px]" alt="Flowbite Logo" />
           </a>
           <span className="flex gap-6 self-left whitespace-nowrap text-3xl font-semibold dark:text-white md:pr-6">
-            <label htmlFor="profile-pic-upload">
-              <img
-                src={profilePic || '/default-profile.png'} // Show uploaded or default profile picture
-                className="ring-primary ring-offset-base-100 w-16 h-16 rounded-full ring ring-offset-2"
-                alt="User Profile"
-                style={{ cursor: 'pointer' }}
-              />
-            </label>
-            <input
-              id="profile-pic-upload"
-              type="file"
-              accept="image/*"
-              onChange={handleProfilePicUpload}
-              style={{ display: 'none' }}
-            />
-
             <div className="block">
-              <span className="align-center">Hello {user.name || 'Guest'}</span>
-              <span className="useremail">{user.email || 'No email available'}</span>
+              if () {
+                
+              }
+              <span className="align-center">Hello {user.name }</span>
+              <span className="useremail">{user.email}</span>
             </div>
           </span>
         </div>
