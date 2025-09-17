@@ -57,9 +57,8 @@ function UserRegister() {
 
             if (response.data.success) {
                 toast.success(response.data.message);
-                toast.loading('Redirecting to Dashboard...');
                 setTimeout(() => {
-                    window.location.href = '/UserPanel';
+                    window.location.href = '/userlogin';
                 }, 3000);
             } else {
                 toast.error(response.data.message || 'Failed To Register.');
@@ -183,8 +182,7 @@ function UserRegister() {
                                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
                                     <button
                                         type="submit"
-                                        className="w-[100%] inline-block shrink-0 rounded-md border border-cyan-600 bg-cyan-800 px-12 py-3 text-xl font-medium text-white transition hover:bg-transparent hover:text-cyan-600 focus:outline-none focus:ring active:text-cyan-800"
-                                    >
+                                        className="w-[100%] inline-block shrink-0 rounded-md border border-cyan-600 bg-cyan-800 px-12 py-3 text-xl font-medium text-white transition hover:bg-transparent hover:text-cyan-600 focus:outline-none focus:ring active:text-cyan-800" >
                                         Register
                                     </button>
                                 </div>
