@@ -15,7 +15,7 @@ export function Nav() {
 
   };
   return (
-    <Navbar fluid rounded className="bg-cyan-800 sticky top-0 z-50">
+    <Navbar fluid rounded className="bg-gradient-to-r from-teal-400 from-25% to-teal-600 to-100% sticky top-0 z-50">
       <Navbar.Brand href="/">
         <img src={logo} className="mr-3 h-11 md:h-[65px]" alt="Flowbite React Logo" />
       </Navbar.Brand>
