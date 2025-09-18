@@ -1,4 +1,4 @@
-import { Panel } from '../components/Side Panel/panel.jsx'
+import { Panel } from '../components/Dashboard/Dashboard.jsx'
 import { Profile } from '../components/Profile/Profile.jsx'
 import { Card, Button } from 'flowbite-react'
 import blood from '../Assets/User Panel/blood.AVIF'

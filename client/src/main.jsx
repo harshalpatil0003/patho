@@ -5,7 +5,7 @@ import './index.css'
 import App from './views/App.jsx'
 import UserLogin from './views/Login.jsx'
 import UserRegister from './views/register.jsx'
-import UserPanel from './views/User_Panel.jsx'
+import Dashboard from './components/Dashboard/Dashboard.jsx'
 import About from './views/About.jsx'
 import Contact from './views/Contact.jsx'
 import Services from './views/Services.jsx'
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
     element: <UserRegister />
   },
   {
-    path: '/UserPanel',
-    element: <UserPanel />
+    path: '/Dashboard',
+    element: <Dashboard />
   },
   {
     path: '/About',
