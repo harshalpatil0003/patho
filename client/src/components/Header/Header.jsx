@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { useEffect } from "react";
 import { Button, Navbar, Avatar, Dropdown } from "flowbite-react";
 import sec1 from '../Header/sec1.jpg'
 import { Link } from "react-router-dom";
@@ -10,6 +11,10 @@ import sec5 from '../Header/sec5.jpg'
 import sec6 from '../Header/sec6.jpg'
 import sec7 from '../Header/sec7.avif'
 import sec8 from '../Header/sec8.jpeg'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const myStyle = {
   backgroundImage:
     "url(${sec1})",
@@ -18,6 +23,11 @@ const myStyle = {
   backgroundRepeat: "no- repeat",
 };
 export function Header() {
+
+   useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className=" flex flex-wrap justify-around items-center py-4">
 
@@ -30,9 +40,9 @@ export function Header() {
         </Button.Group>
       </div>
 
-      <div className="  grid grid-cols-2 gap-5 p-[20px]  lg:mt-12 ">
+      <div  data-aos="fade-right" className="  grid grid-cols-2 gap-5 p-[20px]  lg:mt-12 " >
         {/* Card 1: Highlight Section */}
-        <div className=" relative shadow-xl hover:scale-[1.05] transition duration-700 ease-in-out col-span-2 rounded-lg p-5 overflow-hidden " style={{ backgroundImage: `url(${sec6})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }} >
+        <div className=" relative shadow-xl hover:scale-[1.05] transition duration-700 ease-in-out col-span-2 rounded-lg p-5 overflow-hidden "  data-aos="fade-right" style={{ backgroundImage: `url(${sec6})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }} >
           <h2 className="font-bold text-l lg: text-3xl"> Blood Test, COVID-19 Test</h2>
           <div className="mx-auto">
             <Button color="dark" size='lg ' className="mt-8 rounded-lg font-bold p-2 ">Explore Tests</Button>
@@ -46,20 +56,20 @@ export function Header() {
         </div>
 
         {/* Card 2: Metrics */}
-        <div className="shadow-xl hover:scale-[1.05] transition duration-700 ease-in-out  rounded-lg p-5 overflow-hidden md:text-2xl" style={{ backgroundImage: `url(${sec1})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div data-aos="fade-down-left" className="shadow-xl hover:scale-[1.05] transition duration-700 ease-in-out  rounded-lg p-5 overflow-hidden md:text-2xl" style={{ backgroundImage: `url(${sec1})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
           <h3 className="font-bold">Accurate Results </h3>
           <p className="block font-bold">Trusted by 1M+ Users</p>
           {/* <h1>700+</h1> */}
         </div>
 
         {/* Card 4: Recommended Places */}
-        <div className="shadow-xl hover:scale-[1.05] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden md:text-2xl" style={{ backgroundImage: `url(${sec5})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div data-aos="fade-up-right" className="shadow-xl hover:scale-[1.05] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden md:text-2xl" style={{ backgroundImage: `url(${sec5})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
           <h3 className="font-bold ">Recommended Places</h3>
           <p className="block font-bold">Discover beautiful locations</p>
         </div>
 
         {/* Card 5: Reviews */}
-        <div className="shadow-xl  hover:scale-[1.05] transition duration-700 ease-in-out  rounded-lg p-5 overflow-hidden md:text-2xl" style={{ backgroundImage: `url(${sec8})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div  data-aos="fade-up-left" className="shadow-xl  hover:scale-[1.05] transition duration-700 ease-in-out  rounded-lg p-5 overflow-hidden md:text-2xl" style={{ backgroundImage: `url(${sec8})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
           <h3 className="font-bold">Reviews</h3>
 
         </div>

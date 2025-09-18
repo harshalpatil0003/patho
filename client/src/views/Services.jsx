@@ -1,12 +1,19 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { Button } from 'flowbite-react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Services() {
+       useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
+
     return (
         <div>
             <h1 id='Services' className='m-3 text-center text-3xl font-bold lg:text-5xl'>Tests</h1>
             <div className="grid grid-cols-6 gap-10 mx-10 lg:mt-12">
 
-                <div className="col-start-1 col-end-3">
+                <div className="col-start-1 col-end-3" data-aos="fade-right">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden bg-gradient-to-r from-teal-200 from-0% to-teal-400 to-100%"  >
                         <h2 className="font-bold text-xl">1. Complete Blood Count (CBC)</h2>
                         <div className="mx-auto">
@@ -18,7 +25,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-3 col-end-5">
+                <div className="col-start-3 col-end-5" data-aos="zoom-in">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden  bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100%"   >
                         <h2 className="font-bold text-xl"> 2. Blood Sugar (Fasting)</h2>
                         <div className="mx-auto">
@@ -29,7 +36,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-5 col-end-7">
+                <div className="col-start-5 col-end-7" data-aos="fade-left">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100% "   >
                         <h2 className="font-bold text-xl"> 3. Lipid Profile</h2>
                         <div className="mx-auto">
@@ -40,7 +47,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-1 col-end-3">
+                <div className="col-start-1 col-end-3" data-aos="fade-right">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden  bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100%"   >
                         <h2 className="font-bold text-xl">4. Liver Function Test (LFT)</h2>
                         <div className="mx-auto">
@@ -51,7 +58,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-3 col-end-5">
+                <div className="col-start-3 col-end-5" data-aos="zoom-in">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden  bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100%"   >
                         <h2 className="font-bold text-xl">5. Kidney Function Test (KFT)</h2>
                         <div className="mx-auto">
@@ -62,7 +69,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-5 col-end-7">
+                <div className="col-start-5 col-end-7" data-aos="fade-left">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden  bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100%"   >
                         <h2 className="font-bold text-xl">6. Thyroid Profile (T3, T4, TSH)</h2>
                         <div className="mx-auto">
@@ -73,7 +80,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-1 col-end-3">
+                <div className="col-start-1 col-end-3" data-aos="fade-right">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden  bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100%"   >
                         <h2 className="font-bold text-xl">7. TUrine Routine & Microscopy</h2>
                         <div className="mx-auto">
@@ -84,7 +91,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-3 col-end-5">
+                <div className="col-start-3 col-end-5" data-aos="zoom-in">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden  bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100%"   >
                         <h2 className="font-bold text-xl">8. Vitamin D Test</h2>
                         <div className="mx-auto">
@@ -95,7 +102,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-5 col-end-7">
+                <div className="col-start-5 col-end-7" data-aos="fade-left">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden  bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100%"   >
                         <h2 className="font-bold text-xl">9. Hemoglobin (Hb) Test</h2>
                         <div className="mx-auto">
@@ -106,7 +113,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-start-3 col-end-5 ">
+                <div className="col-start-3 col-end-5 " data-aos="fade-up">
                     <div className=" relative shadow-xl hover:scale-[1.01] transition duration-700 ease-in-out rounded-lg p-5 overflow-hidden  bg-gradient-to-r from-teal-200 from-25% to-teal-400 to-100% ">
                         <h2 className="font-bold text-xl">10. Full Body Checkup (Basic Package)</h2>
                         <div className="mx-auto  ">
